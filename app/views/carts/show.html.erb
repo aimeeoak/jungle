@@ -4,6 +4,8 @@
     <h1>My Cart</h1>
   </header>
 
+
+  <% if enhanced_cart[0] %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -50,8 +52,8 @@
   </div>
   <% else %>
 
-  # <h2>Looks like your shopping cart is empty!</h2>
-  # <%= link_to 'Home', :root %>
-  # <% end %>
+  <h2>Looks like your shopping cart is empty!</h2>
+  <%= link_to 'Home', :root %>
+  <% end %>
 
 </section>
